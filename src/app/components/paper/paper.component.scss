@@ -1,28 +1,28 @@
 @import "../../../scss/animation";
 
 .red {
-  border: 2px solid #ff5630;
+  border: 0.5px solid #ff5630;
 }
 .yellow {
-  border: 2px solid #ffab00;
+  border: 0.5px solid #ffab00;
 }
 .green {
-  border: 2px solid #00875a;
+  border: 0.5px solid #00875a;
 }
 .lightgreen {
-  border: 2px solid #36b37e;
+  border: 0.5px solid #36b37e;
 }
 .skyblue {
-  border: 2px solid #00b8d9;
+  border: 0.5px solid #00b8d9;
 }
 .purple {
-  border: 2px solid #6554c0;
+  border: 0.5px solid #6554c0;
 }
 .blue {
-  border: 2px solid #0052cc;
+  border: 0.5px solid #0052cc;
 }
 .navy {
-  border: 2px solid navy;
+  border: 0.5px solid navy;
 }
 .goBackred {
   background-color: #ff5630;
@@ -54,7 +54,6 @@
   animation-duration: 0.5s;
   -webkit-animation-name: bounceInDown;
   animation-name: bounceInDown;
-  height: 80vh;
   width: 90%;
   margin: 3vh auto;
   -moz-border-radius: 15px;
@@ -64,7 +63,7 @@
 
   .goBack {
     display: inline-block;
-    margin: 10px;
+    margin: 25px;
     width: 30px;
     height: 30px;
     -moz-border-radius: 50%;
@@ -74,6 +73,10 @@
     animation-duration: 0.5s;
     -webkit-animation-name: bounceIn;
     animation-name: bounceIn;
+
+    &:hover {
+      cursor: pointer;
+    }
     &:active {
       -webkit-animation-name: zoomOut;
       animation-name: zoomOut;

@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
+import { DataService } from "../../data.service";
 
 @Component({
   selector: "app-canvas",
@@ -7,8 +8,11 @@ import { Router } from "@angular/router";
   styleUrls: ["./canvas.component.scss"]
 })
 export class CanvasComponent implements OnInit {
-  constructor(private router: Router) {}
-  ngOnInit() {}
+  public colorPalette: string[];
+  constructor(private data: DataService, private router: Router) {}
+  ngOnInit() {
+    this.colorPalette = this.data.colorPalette;
+  }
   open(color) {
     this.router.navigate(["paper", color]);
   }

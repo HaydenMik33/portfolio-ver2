@@ -1,27 +1,8 @@
 <div class="paper {{color}}">
   <div class="goBack goBack{{color}}" (click)="goBack()"></div>
-  <div *ngIf="color==='red' ">
-    red
-  </div>
-  <div *ngIf="color==='yellow' ">
-    yellow
-  </div>
-  <div *ngIf="color==='green' ">
-    green
-  </div>
-  <div *ngIf="color==='lightgreen' ">
-    lightgreen
-  </div>
-  <div *ngIf="color==='blue' ">
-    blue
-  </div>
-  <div *ngIf="color==='skyblue' ">
-    skyblue
-  </div>
-  <div *ngIf="color==='purple' ">
-    purple
-  </div>
-  <div *ngIf="color==='navy' ">
-    navy
+  <div *ngFor="let c of colorPalette;">
+    <div *ngIf="color===c">
+      <app-content></app-content>
+    </div>
   </div>
 </div>
