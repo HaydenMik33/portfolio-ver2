@@ -1,0 +1,47 @@
+<div class="tabs">
+    <span (click)="change(0)">
+        design
+    </span>
+    <span (click)="change(1)">
+        front-end
+    </span>
+    <span (click)="change(2)">
+        back-end
+    </span>
+</div>
+<div class="graph">
+    <div class="tab0 tab" *ngIf="tab===0">
+        <h3>Css3</h3>
+        <p><span class="icon"><i class="fab fa-css3"></i></span><span class="bar b1"></span></p>
+        <h3>Html5</h3>
+        <p><span class="icon"><i class="fab fa-html5"></i></span><span class="bar b2"></span></p>
+        <h3>Sass</h3>
+        <p><span class="icon"><i class="fab fa-sass"></i></span><span class="bar b3"></span></p>
+        <h3>Bootstrap 4</h3>
+        <p><span class="icon">B</span><span class="bar b3"></span></p>
+        <h3>Photoshop</h3>
+        <p><span class="icon"><img src="../../../../../assets/media/ps.png" width="17" alt="ps-logo"></span><span class="bar b4"></span></p>
+        <h3>Responsive Web design</h3>
+        <p><span class="icon">RWD</span><span class="bar b5"></span></p>
+    </div>
+    <div class="tab1 tab" *ngIf="tab===1">
+        <h3>Javascipt</h3>
+        <p><span class="icon"><i class="fab fa-js-square"></i></span><span class="bar b6"></span></p>
+        <h3>C#</h3>
+        <p><span class="icon"><i class="fab fa-html5"></i></span><span class="bar b7"></span></p>
+        <h3>React.js</h3>
+        <p><span class="icon"><i class="fab fa-react"></i></span><span class="bar b8"></span></p>
+        <h3>Angular5</h3>
+        <p><span class="icon"><i class="fab fa-angular"></i></span><span class="bar b9"></span></p>
+        <h3>Vue.js</h3>
+        <p><span class="icon"><i class="fab fa-vuejs"></i></span><span class="bar b10"></span></p>
+        <h3>.NET Core</h3>
+        <p><span class="icon">ASP.NET</span><span class="bar b11"></span></p>
+        <h3>Redux</h3>
+        <p><span class="icon"><i class="fab fa-sass"></i></span><span class="bar b11"></span></p>
+        <h3>jQuery</h3>
+        <p><span class="icon"><i class="fab fa-sass"></i></span><span class="bar b11"></span></p>
+
+    </div>
+    <div *ngIf="tab===2">back-end</div>
+</div>

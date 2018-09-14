@@ -1,0 +1,96 @@
+@import "../../../../../scss/mixin";
+@import "../../../../../scss/_var";
+@import "../../../../../scss/_media";
+$design_c: #2196f3;
+$design_b: #bbdefb;
+$front_c:#4CAF50;
+$front_b:#C8E6C9;
+
+.tabs {
+  margin: 50px 20px 30px;
+  span {
+    font-family: $point-font;
+    @include boxshadow-hover-effect();
+    margin: 10px;
+    padding: 10px;
+  }
+}
+.graph {
+  margin: 10px auto 50px;
+  width: 80vw;
+  @include tablet {
+    width: 50vw;
+  }
+  @include desktop {
+    width: 40vw;
+  }
+  text-align: left;
+  .tab > h3 {
+    margin: 0;
+  }
+  .tab0> p{
+    background-color: $design_b;
+    .bar{
+      background-color: $design_c;
+    }
+  }
+  .tab1 >p{
+    background-color: $front_b;
+    .bar{
+      background-color: $front_c;
+    }
+  }
+  .tab > p {
+    width: 80vw;
+    margin: 0 auto 10px;
+    height: 40px;
+    @include tablet {
+      width: 50vw;
+    }
+    @include desktop {
+      width: 40vw;
+    }
+    .icon {
+      position: relative;
+      z-index: 10;
+      left: 10px;
+      font-weight: bold;
+      top: 10px;
+      display: inherit;
+    }
+    .bar {
+      animation: increase 3s;
+      position: relative;
+      display: inline-block;
+      height: 100%;
+      top: -26px;
+    }
+    .b1{
+      width:90%
+    }
+    .b2{
+      width:92%
+    }
+    .b3{
+      width:90%
+    }
+    .b4{
+      width:60%
+    }
+    .b5{
+      width:95%
+    }
+    .b6{
+      width:70%
+    }
+  }
+}
+
+@keyframes increase{
+  from {
+   max-width:0%
+  }
+  to{
+  max-width:100%;
+  }
+}

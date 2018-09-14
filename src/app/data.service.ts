@@ -21,6 +21,6 @@ export class DataService {
     "skyblue":"projects-'Sacks Roofing'",
     "navy":"projects-'Nito'",
     "blue":"contact",
-    "purple":"...coming soon"
+    "purple":"language"
   }
 }
