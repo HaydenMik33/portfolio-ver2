@@ -1,7 +1,6 @@
 <h1>
   Hayden Rahn</h1>
 <div class="boxes-container">
-  <div class="box{{i+1}} box" *ngFor="let c of colorPalette; let i=index;">
-    <div class="circle" (click)="open(c)"></div>
+  <div class="box{{i+1}} box" (click)="open(c)" *ngFor="let c of colorPalette; let i=index;">
   </div>
 </div>

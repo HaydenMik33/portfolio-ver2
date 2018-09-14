@@ -1,56 +1,38 @@
 @import "../../../scss/animation";
 @import "../../../scss/_media";
+@import "../../../scss/_mixin.scss";
 
-.red {
-  border: 0.5px solid #ff5630;
+.line{
+  height: 75px;
 }
-.yellow {
-  border: 0.5px solid #ffab00;
-}
-.green {
-  border: 0.5px solid #00875a;
-}
-.lightgreen {
-  border: 0.5px solid #36b37e;
-}
-.skyblue {
-  border: 0.5px solid #00b8d9;
-}
-.purple {
-  border: 0.5px solid #6554c0;
-}
-.blue {
-  border: 0.5px solid #0052cc;
-}
-.navy {
-  border: 0.5px solid navy;
-}
-.goBackred {
+.linered {
   background-color: #ff5630;
 }
-.goBackyellow {
+.lineyellow {
   background-color: #ffab00;
 }
-.goBackgreen {
+.linegreen {
   background-color: #00875a;
 }
-.goBacklightgreen {
+.linelightgreen {
   background-color: #36b37e;
 }
-.goBackblue {
+.lineblue {
   background-color: #0052cc;
 }
-.goBackskyblue {
+.lineskyblue {
   background-color: #00b8d9;
 }
-.goBacknavy {
+.linenavy {
   background-color: navy;
 }
-.goBackpurple {
+.linepurple {
   background-color: #6554c0;
 }
 
 .paper {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
   width: 90vw;
   margin: 35px auto;
   @include tablet {
@@ -61,51 +43,20 @@
     width: 50vw;
     margin: 75px auto;
   }
-      app-content{
-        -webkit-animation-name: open; /* Safari 4.0 - 8.0 */
-        -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-        animation-name: open;
-        animation-duration: 4s;
-        background-color: #0052cc;
-      }
-  .goBack {
+  .goBack{
+    background-color: white;
     display: inline-block;
-    margin: 25px;
+    margin: 25px 0 0 25px;
     width: 30px;
     height: 30px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
+    -moz-border-radius: 30%;
+    -webkit-border-radius: 30%;
+    border-radius: 30%;
     -webkit-animation-duration: 0.5s;
     animation-duration: 0.5s;
     -webkit-animation-name: bounceIn;
     animation-name: bounceIn;
-
-    &:hover {
-      cursor: pointer;
-    }
-    &:active {
-      -webkit-animation-name: zoomOut;
-      animation-name: zoomOut;
-    }
-  }
-}
-@-webkit-keyframes open {
-  from {
-    height: 0px;
-    display: none;
-  }
-  to {
-    height: auto;
-    display: block;
+  @include boxshadow-hover-effect();
   }
 }
 
-@keyframes open {
-  from {
-    max-height: 0px;
-  }
-  to {
-   max-height: 300px;
-  }
-}
