@@ -5,9 +5,12 @@ $design_c: #2196f3;
 $design_b: #bbdefb;
 $front_c:#4CAF50;
 $front_b:#C8E6C9;
+$back_c:#FFC107;
+$back_b:#FFECB3;
 
 .tabs {
-  margin: 50px 20px 30px;
+  background-color: rgba(0,0,0,0.03);
+  padding: 50px 0;
   span {
     font-family: $point-font;
     @include boxshadow-hover-effect();
@@ -40,6 +43,12 @@ $front_b:#C8E6C9;
       background-color: $front_c;
     }
   }
+  .tab2 >p{
+    background-color: $back_b;
+    .bar{
+      background-color: $back_c;
+    }
+  }
   .tab > p {
     width: 80vw;
     margin: 0 auto 10px;
@@ -59,7 +68,7 @@ $front_b:#C8E6C9;
       display: inherit;
     }
     .bar {
-      animation: increase 3s;
+      animation: increase 2s;
       position: relative;
       display: inline-block;
       height: 100%;
@@ -81,8 +90,48 @@ $front_b:#C8E6C9;
       width:95%
     }
     .b6{
-      width:70%
+      width:90%
     }
+    .b7{
+      width:45%
+    }
+    .b8{
+      width:95%
+    }
+    .b9{
+      width:75%
+    }
+    .b10{
+      width:65%
+    }
+    .b11{
+      width:45%
+    }
+    .b12{
+      width: 95%
+    }
+    .b13{
+      width:65%;
+    }
+    .b14{
+      width:92%;
+    }
+    .b15{
+      width:89%;
+    }
+    .b16{
+      width:80%;
+    }
+    .b17{
+      width:75%;
+    }
+    .b18{
+      width:75%;
+    }
+    .b19{
+      width:90%;
+    }
+
   }
 }
 

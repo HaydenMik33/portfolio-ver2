@@ -1,11 +1,11 @@
 <div class="tabs">
-    <span (click)="change(0)">
+    <span (click)="change(0)" [style.color]="tab===0?'#ff5630':'black'">
         design
     </span>
-    <span (click)="change(1)">
+    <span (click)="change(1)"  [style.color]="tab===1?'#ff5630':'black'">
         front-end
     </span>
-    <span (click)="change(2)">
+    <span (click)="change(2)"  [style.color]="tab===2?'#ff5630':'black'">
         back-end
     </span>
 </div>
@@ -35,13 +35,26 @@
         <p><span class="icon"><i class="fab fa-angular"></i></span><span class="bar b9"></span></p>
         <h3>Vue.js</h3>
         <p><span class="icon"><i class="fab fa-vuejs"></i></span><span class="bar b10"></span></p>
+        <h3>Redux</h3>
+        <p><span class="icon"><i class="fab fa-sass"></i></span><span class="bar b12"></span></p>
         <h3>.NET Core</h3>
         <p><span class="icon">ASP.NET</span><span class="bar b11"></span></p>
-        <h3>Redux</h3>
-        <p><span class="icon"><i class="fab fa-sass"></i></span><span class="bar b11"></span></p>
         <h3>jQuery</h3>
-        <p><span class="icon"><i class="fab fa-sass"></i></span><span class="bar b11"></span></p>
+        <p><span class="icon"><i class="fab fa-sass"></i></span><span class="bar b13"></span></p>
 
     </div>
-    <div *ngIf="tab===2">back-end</div>
+    <div class="tab2 tab" *ngIf="tab===2">
+            <h3>node.js</h3>
+            <p><span class="icon"><i class="fab fa-node-js"></i></span><span class="bar b14"></span></p>
+            <h3>postgresQL</h3>
+            <p><span class="icon"><i class="fab fa-html5"></i></span><span class="bar b15"></span></p>
+            <h3>mongoDB</h3>
+            <p><span class="icon"><i class="fab fa-react"></i></span><span class="bar b16"></span></p>
+            <h3>graphQL</h3>
+            <p><span class="icon"><i class="fab fa-angular"></i></span><span class="bar b17"></span></p>
+            <h3>Apollo server 2.0</h3>
+            <p><span class="icon"><i class="fab fa-sass"></i></span><span class="bar b18"></span></p>
+            <h3>Express.js</h3>
+            <p><span class="icon"><i class="fab fa-vuejs"></i></span><span class="bar b19"></span></p>
+    </div>
 </div>

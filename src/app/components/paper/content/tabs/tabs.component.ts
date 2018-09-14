@@ -14,4 +14,5 @@ export class TabsComponent implements OnInit {
    this.tab = number;
   }
 
+
 }
