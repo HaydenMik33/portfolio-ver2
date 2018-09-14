@@ -1,17 +1,18 @@
 .content{
     -webkit-animation-name: open; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
     animation-name: open;
-    animation-duration: 3s;
+    animation-duration: 2s;
     max-height: auto;
     overflow: hidden;
+    text-align: center;
 }
 @-webkit-keyframes open {
     from {
       max-height: 0px;
     }
     to {
-      max-height: 300px;
+      max-height: 700px;
     }
   }
   
@@ -20,6 +21,6 @@
       max-height: 0px;
     }
     to {
-      max-height: 300px;
+      max-height: 700px;
     }
   }

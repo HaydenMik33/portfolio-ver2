@@ -13,4 +13,14 @@ export class DataService {
     "blue",
     "skyblue"
   ];
+  titles ={
+    "red":"Skills",
+    "yellow":"About me",
+    "green":"projects-'Ilgi'",
+    "lightgreen":"projects-'EB-bed'",
+    "skyblue":"projects-'Sacks Roofing'",
+    "navy":"projects-'Nito'",
+    "blue":"contact",
+    "purple":"...coming soon"
+  }
 }

@@ -10,6 +10,7 @@ export class PaperComponent implements OnInit {
   public color: string;
   private sub: any;
   public colorPalette: string[];
+  public titles :any;
   constructor(
     private data: DataService,
     private route: ActivatedRoute,
@@ -18,6 +19,7 @@ export class PaperComponent implements OnInit {
 
   ngOnInit() {
     this.colorPalette = this.data.colorPalette;
+    this.titles = this.data.titles;
     this.sub = this.route.params.subscribe(params => {
       this.color = params["color"];
       console.log(this.color);

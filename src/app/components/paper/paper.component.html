@@ -1,6 +1,7 @@
 <div class="paper {{color}}">
   <div class="line line{{color}}">
     <span class="goBack" (click)="goBack()"></span>
+    <span class="title">{{titles[color]}}</span>
   </div>
   <div *ngFor="let c of colorPalette;">
     <div *ngIf="color===c">
