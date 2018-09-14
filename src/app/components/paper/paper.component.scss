@@ -103,11 +103,9 @@
 
 @keyframes open {
   from {
-    height: 0px;
-    display: none;
+    max-height: 0px;
   }
   to {
-    height: auto;
-    display: block;
+   max-height: 300px;
   }
 }
