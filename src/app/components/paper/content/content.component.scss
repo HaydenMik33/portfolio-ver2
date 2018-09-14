@@ -1,3 +1,5 @@
+@import "../../../../scss/var";
+@import "../../../../scss/media";
 .content{
     -webkit-animation-name: open; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
@@ -6,6 +8,62 @@
     max-height: auto;
     overflow: hidden;
     text-align: center;
+    h1{
+      font-weight: lighter;
+      font-family: $header;
+    }
+}
+.yellow{
+  .y_about{
+    padding: 50px;
+  }
+  .y_intro{
+    h2{
+      font-weight: lighter;
+    }
+    display: flex;
+    flex-direction: column;
+    @include tablet{
+    flex-direction: row;
+    }
+    @include desktop{
+      flex-direction: row;
+    }
+    @include middle{
+      flex-direction: row;
+    }
+    justify-content: space-evenly;
+    .y_profile{
+      @media (max-width:500px){
+        margin:0 auto 
+      } 
+      @include tablet{
+        flex-direction: row;
+        width: 200px;
+        height: 200px;
+        }
+        @include desktop{
+          flex-direction: row;
+        }
+        @include middle{
+          width: 200px;
+          height: 200px;
+          flex-direction: row;
+        }
+      border-radius: 20px;
+      width: 250px;
+      background-size: cover;
+      height: 250px;
+      background-image: url("../../../../scss/images/profile.jpeg")
+    }
+    padding: 40px;
+    background-color: rgba(0,0,0,0.1);
+    h1{
+      font-size: 4em;
+      color:$yellow;
+      margin: 0;
+    }
+  }
 }
 @-webkit-keyframes open {
     from {
