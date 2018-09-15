@@ -63,16 +63,22 @@ $back_b:#FFECB3;
       position: relative;
       z-index: 10;
       left: 10px;
-      font-weight: bold;
-      top: 10px;
+      top:7px;
+      i{
+        font-weight: bold;
+        font-size: 1.5em !important;
+      }
       display: inherit;
+    }
+    .letterlogo{
+      font-size:1.25em;
     }
     .bar {
       animation: increase 2s;
       position: relative;
       display: inline-block;
       height: 100%;
-      top: -26px;
+      top: -32px;
     }
     .b1{
       width:90%
