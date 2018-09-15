@@ -85,3 +85,64 @@ h1 {
       background-color: $skyblue;
   }
 }
+
+.msgBox{
+  display: none;
+  position: fixed !important;
+  right: 25px;
+  bottom:10vh;
+  @include middle{
+    display: inline-block;
+    padding:5px 10px;
+  }
+  @include tablet{
+    display: inline-block;
+    padding: 10px 20px;
+    bottom:20vh;
+    right: 60px;
+  }
+  @include desktop{
+    display: inline-block;
+    padding: 10px 20px;
+    right: 150px;
+    bottom: 15vh;
+  }
+  @include boxshadow-hover-effect();
+  background-image: linear-gradient(to right, #00b8d9, #74c5e7, #aad4f0, #d3e3f5, #f4f5f7);
+  a{
+    color:rgba(0,0,0,0.8);
+    text-decoration: none;
+    i{
+      font-style: normal;
+    }
+    h2{
+      font-weight: lighter;
+      margin:0;
+    }
+  }
+  -webkit-animation: mymove 3s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove 3s infinite;
+}
+@-webkit-keyframes mymove {
+  0%{
+    margin-right: 0px;
+  }
+  50%{
+    margin-right: 10px;
+  }
+  100%{
+    margin-right: 0px;
+  }
+}
+
+@keyframes mymove {
+  0%{
+    margin-right: 0px;
+  }
+  50%{
+    margin-right: 10px;
+  }
+  100%{
+    margin-right: 0px;
+  }
+}
