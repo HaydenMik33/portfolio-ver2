@@ -1,6 +1,8 @@
 @import "../../../scss/_var";
 @import "../../../scss/animation";
 @import "../../../scss/_mixin.scss";
+@import "../../../scss/_media.scss";
+
 h1 {
   font-size: 400%;
   margin-top: 15vh;
@@ -12,9 +14,22 @@ h1 {
 }
 
 .boxes-container {
-  width: 30vw;
-  height: 30vw;
   margin: 0 auto;
+  width:65vw;
+  height:65vw;
+  @include middle{
+    width:45vw;
+    height: 45vw;
+  }
+  @include tablet{
+    width: 35vw;
+    height: 35vw;
+  }
+  @include desktop{
+    width: 25vw;
+    height: 25vw;
+
+  }
   .box {
   @include boxshadow-circle();
     width: 25%;
@@ -41,12 +56,13 @@ h1 {
       background-color: $yellow;
   }
   .box3 {
-    top: 22.5%;
-    left: 25%;
+    top: 23.5%;
+    left: 26%;
       background-color: $green;
   }
   .box4 {
-    top: 52.5%;
+    top: 53%;
+    left:1%;
       background-color: $lightgreen;
   }
   .box5 {
