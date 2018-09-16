@@ -1,16 +1,160 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <title>PorfolioVer2</title>
+  <title>Hayden Rahn</title>
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <style type="text/css">
+    .wave {
+      width: 90vw;
+      height: 120vh;
+      position: absolute;
+      top: 50%;
+      left: -300px;
+      background-color: #BBDEFB;
+      opacity: 0.6;
+      border-radius: 40%;
+    }
+    .app-loading {
+      position: absolute;
+      width: 35vw;
+      height: 35vw;
+      overflow: hidden;
+      top: 20%;
+      left: 33%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      border-radius: 50%;
+    }
+    @media (max-width:500px){
+      .app-loading{
+        width: 75vw;
+        height: 75vw;
+        left:15%;
+      }
+      .app-loading .wave{
+        width:200vw;
+        top:25%;
+        left:-250px;
+      }
+    }
+    @media (min-width: 501px) and (max-width: 1023px) {
+      .app-loading{
+        width: 50vw;
+        left: 25%;
+        height: 50vw;
+      }
+      .app-loading .wave{
+         width:150vw;
+         top:30%;
+      }
+    }
+
+    .wave.one {
+      animation: wave 5s linear -1s infinite;
+    }
+
+    .wave.two {
+      animation: wave 8s linear -1s infinite;
+    }
+
+    .wave.three {
+      animation: wave 11s linear -1s infinite;
+    }
+
+    @keyframes wave {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .shark {
+      display: inline-block;
+      font-size: 3em;
+      -webkit-animation: swing 2s infinite;
+      animation: swing 2s infinite;
+      position: relative;
+      top: 50%;
+      left: 43%;
+      font-size: 3em;
+      z-index: 10;
+    }
+
+    @-webkit-keyframes swing {
+      20% {
+        -webkit-transform: rotate3d(0, 0, 1, 15deg);
+        transform: rotate3d(0, 0, 1, 15deg);
+      }
+
+      40% {
+        -webkit-transform: rotate3d(0, 0, 1, -10deg);
+        transform: rotate3d(0, 0, 1, -10deg);
+      }
+
+      60% {
+        -webkit-transform: rotate3d(0, 0, 1, 5deg);
+        transform: rotate3d(0, 0, 1, 5deg);
+      }
+
+      80% {
+        -webkit-transform: rotate3d(0, 0, 1, -5deg);
+        transform: rotate3d(0, 0, 1, -5deg);
+      }
+
+      to {
+        -webkit-transform: rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg);
+      }
+    }
+
+    @keyframes swing {
+      20% {
+        -webkit-transform: rotate3d(0, 0, 1, 15deg);
+        transform: rotate3d(0, 0, 1, 15deg);
+      }
+
+      40% {
+        -webkit-transform: rotate3d(0, 0, 1, -10deg);
+        transform: rotate3d(0, 0, 1, -10deg);
+      }
+
+      60% {
+        -webkit-transform: rotate3d(0, 0, 1, 5deg);
+        transform: rotate3d(0, 0, 1, 5deg);
+      }
+
+      80% {
+        -webkit-transform: rotate3d(0, 0, 1, -5deg);
+        transform: rotate3d(0, 0, 1, -5deg);
+      }
+
+      to {
+        -webkit-transform: rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg);
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <app-root></app-root>
+  <app-root>
+    <div class="app-loading">
+      <span class="shark">🦈</span>
+      <div class="wave one"></div>
+      <div class="wave two"></div>
+      <div class="wave three"></div>
+    </div>
+  </app-root>
 </body>
+
 </html>
