@@ -29,22 +29,27 @@
     </div>
 </div>
 <div *ngIf="color==='blue'">
-    this is red
+        <i class="devicon-github-plain-wordmark colored"></i>
+        <i class="fab fa-linkedin"></i>
+        <i class="fas fa-mobile-alt"></i>
+        <i class="far fa-envelope"></i>
 </div>
 <div *ngIf="color==='lightgreen'">
     this is red
 </div>
 <div *ngIf="color==='green'" class="green content">
     <div class="g-header">
-            <h1><span>ILGI</span> &nbsp;-daily mood tracker</h1>
+        <div class="g-link"><a  href="http://www.ilgi.space">www.ilgi.space</a></div>
+      
+            <h1>  <a href="http://www.ilgi.space"><span>ILGI</span></a> &nbsp;-daily mood tracker</h1>
             <p>
             Diary tracker for storing events, color coded pixels added for visual organization
             </p>
     </div>
     <div class="img-container">
-        <img alt="ilgi-graph" src="../../../../assets/media/ilgi-graph.png">
-        <img alt="ilgi-feed" src="../../../../assets/media/ilgi-feed.png">
-        <img class="ilgi-main" alt="ilgi-main" src="../../../../assets/media/ilgi-main.png">
+        <img (click)="changeImg(1)" *ngIf="img===0" class="ilgi-main" alt="ilgi-main" src="../../../../assets/media/ilgi-main.png">
+        <img (click)="changeImg(2)" *ngIf="img===1" alt="ilgi-feed" src="../../../../assets/media/ilgi-feed.png">
+        <img (click)="changeImg(0)" *ngIf="img===2" alt="ilgi-graph" src="../../../../assets/media/ilgi-graph.png">
     </div>
 </div>
 <div *ngIf="color==='skyblue'">
