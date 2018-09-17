@@ -1,84 +1,140 @@
 @import "../../../../scss/var";
 @import "../../../../scss/media";
-.content{
-    -webkit-animation-name: open; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
-    animation-name: open;
-    animation-duration: 2s;
-    max-height: auto;
-    overflow: hidden;
-    text-align: center;
-    h1{
-      font-weight: lighter;
-      font-family: $header;
-    }
+.content {
+  -webkit-animation-name: open; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  animation-name: open;
+  animation-duration: 2s;
+  max-height: auto;
+  overflow: hidden;
+  text-align: center;
+  h1 {
+    font-weight: lighter;
+    font-family: $header;
+  }
 }
-.yellow{
-  .y_about{
+.yellow {
+  .y_about {
     padding: 50px;
   }
-  .y_intro{
-    h2{
+  .y_intro {
+    h2 {
       font-weight: lighter;
     }
     display: flex;
     flex-direction: column;
-    @include tablet{
-    flex-direction: row;
-    }
-    @include desktop{
+    @include tablet {
       flex-direction: row;
     }
-    @include middle{
+    @include desktop {
+      flex-direction: row;
+    }
+    @include middle {
       flex-direction: row;
     }
     justify-content: space-evenly;
-    .y_profile{
-      @media (max-width:500px){
-        margin:0 auto 
-      } 
-      @include tablet{
+    .y_profile {
+      @media (max-width: 500px) {
+        margin: 0 auto;
+      }
+      @include tablet {
         flex-direction: row;
         width: 200px;
         height: 200px;
-        }
-        @include desktop{
-          flex-direction: row;
-        }
-        @include middle{
-          width: 200px;
-          height: 200px;
-          flex-direction: row;
-        }
+      }
+      @include desktop {
+        flex-direction: row;
+      }
+      @include middle {
+        width: 200px;
+        height: 200px;
+        flex-direction: row;
+      }
       border-radius: 20px;
       width: 250px;
       background-size: cover;
       height: 250px;
-      background-image: url("../../../../scss/images/profile.jpeg")
+      background-image: url("../../../../scss/images/profile.jpeg");
     }
     padding: 40px;
-    background-color: rgba(0,0,0,0.1);
-    h1{
+    background-color: rgba(0, 0, 0, 0.1);
+    h1 {
       font-size: 4em;
-      color:$yellow;
+      color: $yellow;
       margin: 0;
     }
   }
 }
+.green {
+  .img-container {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    width: 100%;
+    .ilgi-main {
+      display: inline-block !important;
+      width: 90%;
+    }
+    img {
+      display: none;
+      @include tablet {
+        width: 50% !important;
+        display: inline-block;
+      }
+      @include desktop {
+        width: 40% !important;
+        display: inline-block;
+      }
+    }
+  }
+  .g-header {
+    width: 90%;
+    margin: 30px auto;
+    text-align: left;
+    @include tablet {
+      width: 75%;
+    }
+    @include desktop {
+      width: 70%;
+    }
+    h1 {
+      color: $lightgreen;
+      margin: 0;
+      span {
+        color: $green;
+        font-family: $header;
+        font-size: 2.5em;
+        font-weight: bold;
+      }
+    }
+    p {
+      margin: 0;
+    }
+  }
+  article {
+    width: 90%;
+    margin: 30px auto;
+    @include tablet {
+      width: 75%;
+    }
+    @include desktop {
+      width: 70%;
+    }
+  }
+}
 @-webkit-keyframes open {
-    from {
-      max-height: 0px;
-    }
-    to {
-      max-height: 100vh;
-    }
+  from {
+    max-height: 0px;
   }
-  
-  @keyframes open {
-    from {
-      max-height: 0;
-    }
-    to {
-      max-height: 100vh;
-    }
+  to {
+    max-height: 100vh;
   }
+}
+
+@keyframes open {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 100vh;
+  }
+}
