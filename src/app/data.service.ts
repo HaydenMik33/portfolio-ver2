@@ -16,10 +16,10 @@ export class DataService {
   titles ={
     "red":"Skills",
     "yellow":"About me",
-    "green":"projects <Ilgi>",
-    "lightgreen":"projects <EB-bed>",
-    "skyblue":"projects <Sacks Roofing>",
-    "navy":"projects <Nito>",
+    "green":"Ilgi",
+    "lightgreen":"EB health care",
+    "skyblue":"Sack's",
+    "navy":"Nito",
     "blue":"contact",
     "purple":"language"
   }

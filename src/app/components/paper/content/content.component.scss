@@ -67,8 +67,7 @@
     }
   }
 }
-.green {
-  .img-container {
+ .img-container {
     @include tablet {
       width: 75%;
     }
@@ -91,6 +90,8 @@
         animation:1s fadeIn;
     }
   }
+.green {
+ 
   .g-link {
     text-align: right;
     color: black;
@@ -131,6 +132,121 @@
         cursor: pointer;
         &:hover {
           color: $lightgreen;
+          text-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+          transition: 0.4s ease-in-out;
+        }
+      }
+    }
+    p {
+      margin: 0;
+    }
+  }
+}
+.skyblue{
+  .sk-link {
+    text-align: right;
+    color: black;
+    font-weight: bold;
+    a:-webkit-any-link {
+      color: black;
+    }
+    &:hover {
+      a:-webkit-any-link {
+        transition: 0.3s;
+        color: $skyblue;
+      }
+    }
+  }
+  .sk-header {
+    width: 90%;
+    margin: 30px auto;
+    text-align: left;
+    @include tablet {
+      width: 75%;
+    }
+    @include desktop {
+      width: 70%;
+    }
+    a {
+      text-decoration: none;
+    }
+    h1 {
+      color: $skyblue;
+      margin: 0;
+      font-size: 1.4em;
+      font-weight: lighter;
+      span {
+        display: block;
+        color: $skyblue;
+        font-family: $header;
+        font-size: 2em;
+        font-weight: bold;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+        &:hover {
+          color: #B3F5FF;
+          text-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+          transition: 0.4s ease-in-out;
+        }
+      }
+    }
+    p {
+      margin: 0;
+    }
+  }
+  .img-container{
+ .sb-double-img{
+   display: flex;
+   align-items: baseline;
+   flex-direction: row;
+   justify-content: space-evenly;
+   img{
+     width: 48%;
+     height: auto;
+   }
+ } 
+}
+}
+.navy{
+  .nv-link {
+    text-align: right;
+    color: black;
+    font-weight: bold;
+    a:-webkit-any-link {
+      color: black;
+    }
+    &:hover {
+      a:-webkit-any-link {
+        transition: 0.3s;
+        color: $navy;
+      }
+    }
+  }
+  .nv-header {
+    width: 90%;
+    margin: 30px auto;
+    text-align: left;
+    @include tablet {
+      width: 75%;
+    }
+    @include desktop {
+      width: 70%;
+    }
+    a {
+      text-decoration: none;
+    }
+    h1 {
+      color: $blue;
+      margin: 0;
+      span {
+        color: $navy;
+        font-family: $header;
+        font-size: 2.5em;
+        font-weight: bold;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+        &:hover {
+          color: $blue;
           text-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
           transition: 0.4s ease-in-out;
         }

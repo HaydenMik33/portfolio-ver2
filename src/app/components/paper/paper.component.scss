@@ -5,30 +5,36 @@
 
 .line{
   height: 75px;
+  color: rgba(255,255,255, 1);
 }
 .linered {
   background-color: #ff5630;
+  color: rgba(255,255,255, 0.9);
 }
 .lineyellow {
   background-color: #ffab00;
 }
 .linegreen {
   background-color: #00875a;
+  color: rgba(255,255,255, 0.8);
 }
 .linelightgreen {
   background-color: #36b37e;
 }
 .lineblue {
   background-color: #0052cc;
+  color: rgba(255,255,255, 0.9);
 }
 .lineskyblue {
   background-color: #00b8d9;
 }
 .linenavy {
   background-color: navy;
+  color: rgba(255,255,255, 0.7);
 }
 .linepurple {
   background-color: #6554c0;
+  color: rgba(255,255,255, 0.8);
 }
 
 .paper {
@@ -53,7 +59,7 @@
     font-weight: bold;
   }
   .goBack{
-    background-color: white;
+    background-color:  rgba(255,255,255, 0.25);;
     display: inline-block;
     margin: 25px 0 0 25px;
     width: 30px;

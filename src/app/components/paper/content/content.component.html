@@ -30,19 +30,19 @@
 </div>
 <div *ngIf="color==='blue'">
     <app-contact></app-contact>
-      
+
 </div>
 <div *ngIf="color==='lightgreen'">
     this is red
 </div>
 <div *ngIf="color==='green'" class="green content">
     <div class="g-header">
-        <div class="g-link"><a  href="http://www.ilgi.space">www.ilgi.space</a></div>
-      
-            <h1>  <a href="http://www.ilgi.space"><span>ILGI</span></a> &nbsp;-daily mood tracker</h1>
-            <p>
+        <div class="g-link"><a href="http://www.ilgi.space">www.ilgi.space</a></div>
+
+        <h1> <a href="http://www.ilgi.space"><span>ILGI</span></a> &nbsp;-daily mood tracker</h1>
+        <p>
             Diary tracker for storing events, color coded pixels added for visual organization
-            </p>
+        </p>
     </div>
     <div class="img-container">
         <img (click)="changeImg(1)" *ngIf="img===0" class="ilgi-main" alt="ilgi-main" src="../../../../assets/media/ilgi-main.png">
@@ -50,11 +50,38 @@
         <img (click)="changeImg(0)" *ngIf="img===2" alt="ilgi-graph" src="../../../../assets/media/ilgi-graph.png">
     </div>
 </div>
-<div *ngIf="color==='skyblue'">
-    this is red
+<div *ngIf="color==='skyblue'" class="skyblue">
+    <div class="sk-header">
+        <div class="sk-link"><a href="https://ken-webapp.firebaseapp.com/#/">www.sakscontracting.com</a></div>
+
+        <h1> <a href="https://ken-webapp.firebaseapp.com/#/"><span>Sak's contracting</span></a>commercial roofing
+            services</h1>
+        <p>
+            Mobile responsive informational react web app for Sak's roofing
+        </p>
+    </div>
+    <div class="img-container">
+        <div class="sb-double-img" (click)="changeImg(1)" *ngIf="img===0">
+            <img alt="ken-main" src="../../../../assets/media/ken-main.png">
+            <img alt="ken-main" src="../../../../assets/media/ken-main2.png">
+        </div>
+        <img (click)="changeImg(2)" *ngIf="img===1" alt="ken-about" src="../../../../assets/media/ken-about.png">
+        <img (click)="changeImg(0)" *ngIf="img===2" alt="ken-contact" src="../../../../assets/media/ken-contact.png">
+    </div>
 </div>
-<div *ngIf="color==='navy'">
-    this is red
+<div *ngIf="color==='navy'" class="navy">
+    <div class="nv-header">
+        <div class="nv-link"><a href="https://nito.fun/#/">www.nito.fun</a></div>
+        <h1> <a href="https://nito.fun/#/"><span>Nito</span></a> &nbsp;Custom uqiz creator</h1>
+        <p>
+            Learning resources & materials hub, student analytics, private learning services
+        </p>
+    </div>
+    <div class="img-container">
+        <img (click)="changeImg(1)" *ngIf="img===0" alt="nito-main" src="../../../../assets/media/nito-main.png">
+        <img (click)="changeImg(2)" *ngIf="img===1" alt="nito-test" src="../../../../assets/media/nito-test.png">
+        <img (click)="changeImg(0)" *ngIf="img===2" alt="nito-q" src="../../../../assets/media/nito-q.png">
+    </div>
 </div>
 <div *ngIf="color==='purple'">
     this is red
