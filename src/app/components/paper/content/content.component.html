@@ -32,8 +32,16 @@
     <app-contact></app-contact>
 
 </div>
-<div *ngIf="color==='lightgreen'">
-    this is red
+<div *ngIf="color==='lightgreen'" class="lg">
+    <div class="lg-header">
+        <h1>Enzyme Bath Health Care Center</h1>
+        <p>
+         angular single page application for a local client
+        </p>
+    </div>
+    <div class="img-container">
+        <img alt="eb-main" src="../../../../assets/media/eb-main.png">
+    </div>
 </div>
 <div *ngIf="color==='green'" class="green content">
     <div class="g-header">
@@ -43,6 +51,7 @@
         <p>
             Diary tracker for storing events, color coded pixels added for visual organization
         </p>
+        <p class="click-below">click below</p>
     </div>
     <div class="img-container">
         <img (click)="changeImg(1)" *ngIf="img===0" class="ilgi-main" alt="ilgi-main" src="../../../../assets/media/ilgi-main.png">
@@ -59,6 +68,7 @@
         <p>
             Mobile responsive informational react web app for Sak's roofing
         </p>
+        <p class="click-below">click below</p>
     </div>
     <div class="img-container">
         <div class="sb-double-img" (click)="changeImg(1)" *ngIf="img===0">
@@ -76,13 +86,37 @@
         <p>
             Learning resources & materials hub, student analytics, private learning services
         </p>
+        <p class="click-below">click below</p>
+
     </div>
-    <div class="img-container">
+    <div class="img-container multi-container">
         <img (click)="changeImg(1)" *ngIf="img===0" alt="nito-main" src="../../../../assets/media/nito-main.png">
         <img (click)="changeImg(2)" *ngIf="img===1" alt="nito-test" src="../../../../assets/media/nito-test.png">
         <img (click)="changeImg(0)" *ngIf="img===2" alt="nito-q" src="../../../../assets/media/nito-q.png">
     </div>
 </div>
-<div *ngIf="color==='purple'">
-    this is red
+<div *ngIf="color==='purple'" class="purple">
+  <section class="s1">
+      <h2>todo list with Vue.js</h2>
+      <a href="https://github.com/HaydenMik33/minitodoapp-">https://github.com/minitodowithVue</a>
+      </section>
+      <div class="img-container">
+        <img alt="vue-app" src="../../../../assets/media/vueapp.png">
+        </div>
+        <hr />
+  <section class="s2">
+      <h2>pets care playground with react context api</h2>
+      <a href="https://github.com/HaydenMik33/context-mini">https://github.com/context-mini</a>
+      </section>
+      <div class="img-container">
+        <img alt="tamagochi" src="../../../../assets/media/contextapi.png">
+        </div>
+        <hr/>
+  <section class="s3">
+      <h2>original year in pixels</h2>
+      <a href="https://github.com/HaydenMik33/year-in-pixels">https://github.com/year-in-pixels</a>
+      </section>
+      <div class="img-container">
+      <img alt="ilgi_old" src="../../../../assets/media/old_ilgi.jpg">
+      </div>
 </div>

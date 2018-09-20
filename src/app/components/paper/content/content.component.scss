@@ -1,7 +1,12 @@
 @import "../../../../scss/var";
 @import "../../../../scss/media";
 @import "../../../../scss/_mixin";
-
+.click-below{
+  margin:20px 0 0 0 !important;
+  font-family: $header;
+  font-size: 1.2em;
+  border-bottom: rgba(0, 0, 0, 0.5) 0.5px solid;
+}
 .content {
   -webkit-animation-name: open; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
@@ -74,7 +79,7 @@
     @include desktop {
       width: 70%;
     }
-    margin: 30px auto;
+    margin: 20px auto 50px;
     width: 90%;
     @include boxshadow-hover-effect();
     img {
@@ -88,6 +93,24 @@
         to{opacity: 1;}}
         -webkit-animation:1s fadeIn;
         animation:1s fadeIn;
+    }
+  }
+  .lg{
+    .lg-header{
+      width: 90%;
+      margin: 30px auto;
+      text-align: left;
+      @include tablet {
+        width: 75%;
+      }
+      @include desktop {
+        width: 70%;
+      }
+      h1{
+        color: $lightgreen;
+        margin: 0;
+        font-family: $header;
+      }
     }
   }
 .green {
@@ -273,4 +296,36 @@
   to {
     max-height: 100vh;
   }
+}
+.purple{
+  section{
+    width: 90%;
+    margin: 30px auto;
+    text-align: left;
+
+    @include tablet {
+      width: 75%;
+    }
+    @include desktop {
+      width: 70%;
+    }
+    h2{
+      color:$purple;
+      letter-spacing: 1px;
+      font-family: $header;
+    }
+    a{
+      text-decoration: none;
+      color:black;
+      &:hover{
+        color:$purple;
+      }
+    }
+  }
+  .img-container{
+    margin-bottom: 100px;
+  }
+  hr{ border-color:$purple;
+    opacity: 0.3;
+   }
 }

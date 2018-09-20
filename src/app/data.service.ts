@@ -17,10 +17,10 @@ export class DataService {
     "red":"Skills",
     "yellow":"About me",
     "green":"Ilgi",
-    "lightgreen":"EB health care",
+    "lightgreen":"EB care",
     "skyblue":"Sack's",
     "navy":"Nito",
     "blue":"contact",
-    "purple":"language"
+    "purple":"mini apps"
   }
 }
